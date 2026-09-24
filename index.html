@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SurfTheWeb.online — Discover Something Random</title>
+
+    <meta
+        name="description"
+        content="Surf the web and discover a randomly selected interesting website."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="hero">
+
+            <h1>SURF THE WEB</h1>
+
+            <p class="tagline">
+                See where the internet takes you.
+            </p>
+
+            <button
+                id="surfButton"
+                class="surf-button"
+                type="button"
+            >
+                SURF
+            </button>
+
+            <p class="submit-site">
+                Know a website we should add?
+                <a
+                    href="#"
+                    id="submitSite"
+                >
+                    Suggest it here.
+                </a>
+            </p>
+
+            <div
+                id="surfCount"
+                class="surf-count"
+                aria-live="polite"
+            >
+                <span class="surf-count-label">
+                    Today's surf count:
+                </span>
+
+                <span
+                    id="surfCountNumber"
+                    class="surf-count-number"
+                >
+                    —
+                </span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="websites.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
