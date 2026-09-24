@@ -19,38 +19,31 @@ body {
         Helvetica,
         Arial,
         sans-serif;
-
     background: #0d0f12;
     color: #eeeeee;
 }
 
 .page {
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     padding: 40px 20px;
 }
 
 .hero {
     width: 100%;
     max-width: 700px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 
 .hero h1 {
     margin: 0;
-
     color: #f1f1f1;
-
     font-size: clamp(2.5rem, 8vw, 5.5rem);
     font-weight: 800;
     letter-spacing: -0.06em;
@@ -59,31 +52,23 @@ body {
 
 .tagline {
     margin: 18px 0 0;
-
     color: #969aa1;
-
     font-size: 1.05rem;
     line-height: 1.5;
 }
 
 .surf-button {
     margin-top: 42px;
-
     min-width: 220px;
     padding: 18px 42px;
-
     border: 1px solid #30343a;
     border-radius: 999px;
-
     background: #1b1e23;
     color: #f2f2f2;
-
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-
     cursor: pointer;
-
     transition:
         transform 0.15s ease,
         background 0.15s ease,
@@ -113,9 +98,7 @@ body {
 
 .submit-site {
     margin: 28px 0 0;
-
     color: #8d929a;
-
     font-size: 0.9rem;
     line-height: 1.5;
 }
@@ -123,9 +106,7 @@ body {
 .submit-site a {
     color: #ffd43b;
     font-weight: 600;
-
     text-decoration: none;
-
     transition:
         color 0.15s ease,
         opacity 0.15s ease;
@@ -146,24 +127,97 @@ body {
 
 .surf-count {
     margin-top: 18px;
-
     color: #9a9ea5;
-
     font-size: 1rem;
     font-weight: 500;
-
     text-align: center;
 }
 
 .surf-count-number {
     display: inline-block;
-
     margin-left: 5px;
-
     color: #ffd43b;
-
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+
+/* ============================================================
+   LEGAL / INFORMATION PAGES
+   ============================================================ */
+
+.legal-page {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 70px 0 50px;
+}
+
+.legal-page h1 {
+    margin: 0 0 18px;
+}
+
+.legal-page h2 {
+    margin: 42px 0 12px;
+}
+
+.legal-page p {
+    line-height: 1.75;
+    margin: 0 0 16px;
+}
+
+.legal-intro {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 35px !important;
+}
+
+
+/* ============================================================
+   BACK TO SURFTHEWEB LINK
+   ============================================================ */
+
+.legal-back {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.legal-back:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   SITE FOOTER
+   ============================================================ */
+
+.site-footer {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 25px 0 40px;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.site-footer a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.site-footer span {
+    margin: 0 9px;
+    color: #777777;
 }
 
 
@@ -200,5 +254,27 @@ body {
 
     .surf-count-number {
         font-size: 1.25rem;
+    }
+
+    .legal-page {
+        width: calc(100% - 30px);
+        padding: 45px 0 35px;
+    }
+
+    .legal-page h1 {
+        font-size: 2rem;
+    }
+
+    .legal-page h2 {
+        font-size: 1.25rem;
+    }
+
+    .legal-back {
+        font-size: 1.05rem;
+    }
+
+    .site-footer {
+        width: calc(100% - 30px);
+        font-size: 1rem;
     }
 }
