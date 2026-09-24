@@ -19,56 +19,81 @@ body {
         Helvetica,
         Arial,
         sans-serif;
+
     background: #0d0f12;
     color: #eeeeee;
 }
 
 .page {
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+
+    padding: 40px 20px 70px;
 }
+
+
+/* HERO */
 
 .hero {
     width: 100%;
     max-width: 700px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
+
+    padding-top: 10vh;
 }
 
 .hero h1 {
     margin: 0;
+
     color: #f1f1f1;
+
     font-size: clamp(2.5rem, 8vw, 5.5rem);
     font-weight: 800;
+
     letter-spacing: -0.06em;
     line-height: 0.95;
 }
 
 .tagline {
     margin: 18px 0 0;
+
     color: #969aa1;
+
     font-size: 1.05rem;
     line-height: 1.5;
 }
 
+
+/* SURF BUTTON */
+
 .surf-button {
     margin-top: 42px;
+
     min-width: 220px;
+
     padding: 18px 42px;
+
     border: 1px solid #30343a;
     border-radius: 999px;
+
     background: #1b1e23;
     color: #f2f2f2;
+
     font-size: 1.1rem;
     font-weight: 700;
+
     letter-spacing: 0.08em;
+
     cursor: pointer;
+
     transition:
         transform 0.15s ease,
         background 0.15s ease,
@@ -79,6 +104,7 @@ body {
 .surf-button:hover:not(:disabled) {
     background: #252930;
     border-color: #40454d;
+
     transform: translateY(-2px);
 }
 
@@ -92,21 +118,24 @@ body {
 }
 
 
-/* ============================================================
-   WEBSITE SUGGESTION
-   ============================================================ */
+/* WEBSITE SUGGESTION */
 
 .submit-site {
     margin: 28px 0 0;
+
     color: #8d929a;
+
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
 .submit-site a {
     color: #ffd43b;
+
     font-weight: 600;
+
     text-decoration: none;
+
     transition:
         color 0.15s ease,
         opacity 0.15s ease;
@@ -121,34 +150,116 @@ body {
 }
 
 
-/* ============================================================
-   SURF COUNT
-   ============================================================ */
+/* SURF COUNT */
 
 .surf-count {
     margin-top: 18px;
+
     color: #9a9ea5;
+
     font-size: 1rem;
     font-weight: 500;
+
     text-align: center;
 }
 
 .surf-count-number {
     display: inline-block;
+
     margin-left: 5px;
+
     color: #ffd43b;
+
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 
-/* ============================================================
-   LEGAL / INFORMATION PAGES
-   ============================================================ */
+/* ABOUT CONTENT */
+
+.about-content {
+    width: min(760px, 100%);
+
+    margin-top: 110px;
+
+    text-align: center;
+
+    border-top: 1px solid #24282e;
+
+    padding-top: 55px;
+}
+
+.about-content h2 {
+    margin: 0 0 22px;
+
+    color: #f1f1f1;
+
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 750;
+
+    letter-spacing: -0.025em;
+}
+
+.about-content p {
+    margin: 0 auto 18px;
+
+    color: #9da1a8;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    max-width: 700px;
+}
+
+.about-content strong {
+    color: #eeeeee;
+}
+
+
+/* SITE FOOTER */
+
+.site-footer {
+    width: min(900px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+    padding: 25px 0 40px;
+
+    text-align: center;
+
+    font-size: 1.05rem;
+
+    opacity: 0.9;
+}
+
+.site-footer a {
+    color: #ffffff;
+
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+
+    text-decoration: underline;
+}
+
+.site-footer span {
+    margin: 0 9px;
+
+    color: #777777;
+}
+
+
+/* LEGAL / INFORMATION PAGES */
 
 .legal-page {
     width: min(900px, calc(100% - 40px));
+
     margin: 0 auto;
+
     padding: 70px 0 50px;
 }
 
@@ -162,26 +273,31 @@ body {
 
 .legal-page p {
     line-height: 1.75;
+
     margin: 0 0 16px;
 }
 
 .legal-intro {
     font-size: 1.1rem;
+
     opacity: 0.85;
+
     margin-bottom: 35px !important;
 }
 
 
-/* ============================================================
-   BACK TO SURFTHEWEB LINK
-   ============================================================ */
+/* BACK TO SURFTHEWEB LINK */
 
 .legal-back {
     display: inline-block;
+
     margin-bottom: 35px;
+
     color: #ffffff;
+
     font-size: 1.1rem;
     font-weight: 500;
+
     text-decoration: none;
 }
 
@@ -191,44 +307,16 @@ body {
 }
 
 
-/* ============================================================
-   SITE FOOTER
-   ============================================================ */
-
-.site-footer {
-    width: min(900px, calc(100% - 40px));
-    margin: 0 auto;
-    padding: 25px 0 40px;
-    text-align: center;
-    font-size: 1.05rem;
-    opacity: 0.9;
-}
-
-.site-footer a {
-    color: #ffffff;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.site-footer span {
-    margin: 0 9px;
-    color: #777777;
-}
-
-
-/* ============================================================
-   MOBILE
-   ============================================================ */
+/* MOBILE */
 
 @media (max-width: 600px) {
 
     .page {
-        padding: 30px 20px;
+        padding: 30px 20px 50px;
+    }
+
+    .hero {
+        padding-top: 7vh;
     }
 
     .hero h1 {
@@ -254,6 +342,16 @@ body {
 
     .surf-count-number {
         font-size: 1.25rem;
+    }
+
+    .about-content {
+        margin-top: 80px;
+        padding-top: 40px;
+    }
+
+    .about-content p {
+        font-size: 0.95rem;
+        line-height: 1.75;
     }
 
     .legal-page {
